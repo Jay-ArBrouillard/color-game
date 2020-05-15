@@ -1,2 +1,2 @@
-# color-game
+# RBG Color Game
 ![](color-game.gif)
