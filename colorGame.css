@@ -1,10 +1,12 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive, 'Avenir' , 'Montserrat';
 }
 
 #container {
-    max-width: 75%;
-    margin: 0 auto;
+    max-width: 45%;
+    margin: 20px auto;
 }
 
 .square {
@@ -13,11 +15,22 @@ body {
     padding-bottom: 30%;
     margin: 1.66%;
     float: left;
+    border-radius: 20%;
+    -webkit-transition: background .6s;
+    transition: background .6s;
 }
 
 h1 {
+    text-align: center;
     color: white;
     background: #3492eb;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#color {
+    font-size: 200%;
 }
 
 #divider {
@@ -25,4 +38,59 @@ h1 {
     height: 30px;
     text-align: center;
     color: black;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: #3492eb;
+    font-size: inherit;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background: #3492eb;
+}
+
+#message {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 33%; 
+    background: #d3d3d3; /* Grey background */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .3s;
+    transition: opacity .3s;
+    vertical-align: middle;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #3492eb;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #3492eb;
+    cursor: pointer;
 }
